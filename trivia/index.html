@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Trivia|| Game</title>
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+
+	<meta charset="utf-8">
+    <!-- <link rel="stylesheet" type="text/css" href="css/normalize.min.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="lib/font-awesome-4.3.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300">
+	<!-- jquery Cdn -->
+   <script
+   src="https://code.jquery.com/jquery-3.2.1.js"
+   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+   crossorigin="anonymous"></script>
+
+	</head>
+	<body>
+	<div class="container">
+		<div id="StartBody">
+		<br>
+		<br>
+		<br>
+
+			<div class="jumbotron">
+			<br>
+			<div><h2> Click to start the test, please notice you cannot view pervious question </h2></div>
+			<br>
+			<br>
+			<hr>
+			<br>
+			   
+				<input id="btnStart" type="button" value="Start" class="btn btn-danger btn-lg" onclick="begin()" />
+				</div>
+			
+		</div>
+	<div id="QuizBody">
+		<br>
+		<br>
+		<br>
+
+		<div class="jumbotron">
+			<div class="row" id="timer"> </div>
+			<div class="row" id="time_remain"></div>
+			<h1 class="display-3">Quiz</h1>
+			<p class="lead">question type discription</p>
+			<hr />
+			<div class="my-4" id="main"></div>
+			<p></p>
+
+		</div>
+		<div class="quiz" id="quiz" data-toggle="buttons">
+			<label class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"></span> <input id="ans1" type="radio" name="q_answer" data-value="true" value="true" onclick="userAnswer(this);">True</label>
+			<label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"></span> <input id="ans2" type="radio" name="q_answer" data-value="false" value="false" onclick="userAnswer(this);">False</label>
+			<label class="element-animation3 btn btn-lg btn-primary btn-block "><span class="btn-label"></span> <input id="ans3" type="radio" name="q_answer" data-value="cannot say" value="cannot say" onclick="userAnswer(this);">Cannot say </label>
+
+
+		</div>
+		<br>
+		<br>
+		<br>
+		<div>
+			<p class="lead">
+				<a class="btn btn-primary btn-lg" href="#" role="button" id="next">Next</a>
+			</p>
+		</div>
+	</div>
+        </div>
+      <script type="text/javascript" src="script/quiz.js"></script>
+		<script>
+
+		</script>
+  </body>
+  </html>
